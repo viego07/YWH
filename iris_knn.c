@@ -69,14 +69,14 @@ static int load_dataset(const char *filename, Sample **samples_out) {
         double values[FEATURE_DIM];
         int valid = 1;
 
-        token = strtok_s(line, ",", &context);
+        token = strtok_r(line, ",", &context);
         for (int i = 0; i < FEATURE_DIM; i++) {
             if (token == NULL) {
                 valid = 0;
                 break;
             }
             values[i] = atof(token);
-            token = strtok_s(NULL, ",", &context);
+            token = strtok_r(NULL, ",", &context);
         }
 
         if (!valid || token == NULL) {

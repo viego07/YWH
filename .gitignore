@@ -6,3 +6,7 @@ iris_knn.exe
 *.pdb
 *.ilk
 *.log
+.vscode/
+.DS_Store
+.dSYM/
+*
