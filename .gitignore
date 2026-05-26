@@ -1,0 +1,8 @@
+iris_knn.exe
+*.o
+*.obj
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.log
